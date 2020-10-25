@@ -39,6 +39,8 @@ const data = await repo.find({
 
 2. Launch a new Postgres DB in docker on PORT 5532 by running: `npm run postgres:build`
 
-3. Run tests with in-memory connector. This should work (all tests pass): `npm run test`
+3. Create DB schema: `npm run migrate`
 
-4. Run tests with Postgres connector. This should fail: `npm run test:postgres`
+4. Run tests with in-memory connector. This should work (all tests pass): `npm run test`
+
+5. Run tests with Postgres connector. This should fail: `npm run test:postgres`
